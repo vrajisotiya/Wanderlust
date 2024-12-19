@@ -1,0 +1,211 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* navbar effect */
+.navbar {
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #222222;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.login-btn:hover {
+  border-color: #fe424d;
+  color: #fe424d;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #fe424d;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.signup-btn:hover {
+  background-color: #e63950;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 56, 92, 0.3);
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .search-bar {
+    margin-top: 0.5rem;
+  }
+  .button {
+    width: fit-content;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* footer effect */
+
+.f-info {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  background-color: #ebebeb;
+}
+
+.footer-logo {
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.f-info-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.f-info-socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info-socials i:last-child {
+  margin-right: 0;
+}
+
+.f-info-brand {
+  margin-bottom: 0.5rem;
+}
+
+.f-info-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+/* all listing page */
+.listing-card {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-text p {
+  font-weight: 400;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* new page */
+.add-btn {
+  background-color: #fe424d;
+  border: none;
+}
+
+.add-btn:hover {
+  background-color: #fe424d;
+}
+
+/* edit page */
+.edit-btn {
+  background-color: #fe424d;
+  border: none;
+  margin-left: 16.5%;
+}
+
+@media (max-width: 768px) {
+  .edit-btn {
+    margin-left: 0;
+  }
+}
+
+/* show page */
+.show-img {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Map */
+#map {
+  height: 400px;
+  width: 100%;
+}
