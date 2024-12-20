@@ -96,11 +96,12 @@ app.get(
   "/search",
   wrapAsync(async (req, res) => {
     const { search } = req.query;
+    const sanitizedSearch = search.replace(/\s+/g, "");
     const searchQuery = {
       $or: [
-        { country: { $regex: search, $options: "i" } },
-        { location: { $regex: search, $options: "i" } },
-        { title: { $regex: search, $options: "i" } },
+        { country: { $regex: sanitizedSearch, $options: "i" } },
+        { location: { $regex: sanitizedSearch, $options: "i" } },
+        { title: { $regex: sanitizedSearch, $options: "i" } },
       ],
     };
     const allListings = await Listing.find(searchQuery);
