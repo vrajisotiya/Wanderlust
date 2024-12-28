@@ -22,6 +22,24 @@
         <div class="valid-feedback">Title looks good!</div>
       </div>
       <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <select name="listing[category]" class="form-control" required>
+          <option value="" selected>Please choose category</option>
+          <option value="island">Island</option>
+          <option value="room">Room</option>
+          <option value="iconiccities">Iconic Cities</option>
+          <option value="mountains">Mountains</option>
+          <option value="castels">Castels</option>
+          <option value="amazingpools">Amazing Pools</option>
+          <option value="camping">Camping</option>
+          <option value="desert">Desert</option>
+          <option value="arctic">Arctic</option>
+          <option value="domes">Domes</option>
+          <option value="bots">Bots</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+      <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <textarea name="listing[description]" class="form-control" required>
 <%=listing.description%></textarea
