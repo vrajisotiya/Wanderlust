@@ -18,7 +18,7 @@ module.exports.showListing = async (req, res) => {
     .populate({ path: "reviews", populate: { path: "author" } })
     .populate("owner");
   if (!listing) {
-    req.flash("error", "Listings you requested for does not exist !");
+    req.flash("error", " Listings you requested for does not exist !");
     res.redirect("/listings");
   }
   res.render("listings/show.ejs", { listing });
@@ -38,7 +38,7 @@ module.exports.createListing = async (req, res, next) => {
   newListing.image = { url, filename };
   newListing.geometry = response.body.features[0].geometry;
   let savesListing = await newListing.save();
-  console.log(savesListing);
+
   req.flash("success", "New Listings Created!");
   res.redirect("/listings");
 };

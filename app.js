@@ -21,6 +21,7 @@ const userRouter = require("./routes/user.js");
 const Listing = require("./models/listing.js");
 const wrapAsync = require("./utils/wrapAsync.js");
 
+// for Local DB
 //let Mongo_url = "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl = process.env.ATLASTDB_URL;
 

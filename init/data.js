@@ -273,7 +273,7 @@ const sampleListings = [
     image: {
       url: "https://images.pexels.com/photos/5563472/pexels-photo-5563472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
-    price: 28000,
+    price: 27000,
     location: "Phuket",
     country: "Thailand",
     category: "Amazing Pools",

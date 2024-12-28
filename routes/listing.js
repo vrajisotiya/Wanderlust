@@ -50,7 +50,7 @@ router.get(
   wrapAsync(listingController.randerEditForm)
 );
 
-//Update route
+//Update  route
 // router.put("/:id", isLoggedIn , isOwner ,validateListing ,wrapAsync(listingController.updateListing));
 
 //Delete route

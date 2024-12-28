@@ -13,7 +13,7 @@ router
 
 // router.get("/signup", usersController.randerSignupForm);
 
-// router.post("/signup" , wrapAsync(usersController.signup));
+//  router.post("/signup" , wrapAsync(usersController.signup));
 
 router
   .route("/login")
